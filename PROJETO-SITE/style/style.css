@@ -1,3 +1,12 @@
+body{
+    overflow-x: hidden; 
+    font-family: monospace"DIN Next LT Pro",Arial,sans-serif;
+    /*
+    Achei no :
+    https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp
+    */
+}
+
 .nav_menu{
    background-color: #e7e7db;
 }
@@ -7,7 +16,7 @@ height: 40px !important;
 }
 
 .nav_img_background{
-    clip: rect(0,auto,900px,0);
+    clip: rect(0,auto,1005px,0);
     position: absolute;
     bottom: 0;
     z-index: -99999999;
@@ -33,8 +42,35 @@ height: 40px !important;
     z-index: 9999;
     padding: 15px;
     position: absolute;
-    margin-top: 84px;
+    margin-top: 0;
     color: #fff;
     font-size: 22px;
-    font-family: monospace;
+    
+}
+
+.temp>b>p{
+
+    font-size: 25px;
+   
+}
+
+.temp>b{
+
+    font-size: 50px;
+    text-align: justify;
+    width: 50%;
+    
+}
+
+.gradecomojogar{
+
+    background: #e0e1d9;
+    height: 700px;
+}
+
+footer{
+
+    background-color: #000;
+    color: #fff;
+
 }
