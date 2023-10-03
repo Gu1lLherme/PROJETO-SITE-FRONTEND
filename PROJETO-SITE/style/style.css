@@ -45,7 +45,7 @@ height: 40px !important;
     margin-top: 0;
     color: #fff;
     font-size: 22px;
-    
+    width: 59%;
 }
 
 .temp>b>p{
@@ -69,8 +69,10 @@ height: 40px !important;
 }
 
 footer{
-
     background-color: #000;
     color: #fff;
+    list-style-type: none;
+    display: -webkit-box;
+
 
 }
