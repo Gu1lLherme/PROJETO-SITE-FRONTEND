@@ -24,6 +24,7 @@ height: 40px !important;
 ._categoria{
     display: -webkit-inline-box;
     list-style-type: none;
+    text-decoration: none; color: #fff;
 }
 
 .cateul{
