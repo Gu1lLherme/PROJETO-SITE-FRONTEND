@@ -1,0 +1,24 @@
+
+.nav-top {
+    height: 70px; 
+    background-color: #ecedca !important; 
+    border-top:0.5px solid #dbdbdb; 
+    border-bottom:2px solid red;
+}
+
+.nav-img{
+    height: 60px;
+    border-radius: 15%;
+}
+
+#foto-1{
+    height: 590px;
+    width: 1295px;
+}
+
+
+
+.margem {
+    margin-top: 20px !important;
+    padding-top: 10px !important ;
+}
