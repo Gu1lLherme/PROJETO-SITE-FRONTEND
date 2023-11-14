@@ -22,6 +22,7 @@ height: 40px !important;
     z-index: -99999999;
 }
 ._categoria{
+    padding-top: 15px;
     display: -webkit-inline-box;
     list-style-type: none;
     text-decoration: none; color: #fff;
@@ -49,7 +50,7 @@ height: 40px !important;
     width: 59%;
 }
 
-.temp>b>p{
+.temp{
 
     font-size: 25px;
    
@@ -76,4 +77,49 @@ footer{
     display: -webkit-box;
 
 
+}
+
+
+.div-texto{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+h1 {   
+    color: #ff4125;
+    text-align: center;
+    padding-top: 2%;
+    font-size: 29px;
+    text-align: auto;
+    
+}
+
+.text-topic {
+    margin-top: 5%;
+    font-size: 18px;
+    text-align: left;
+    max-height: auto;
+    min-height: 200px;
+    color: white;
+}
+
+.text-topic-2 {
+    margin-top: 2%;
+    font-size: 18px;
+    text-align: left;
+
+
+}
+
+
+.column {
+	flex-direction: column;
+    
+}
+
+.item {
+    align-items: center;
+    
 }
