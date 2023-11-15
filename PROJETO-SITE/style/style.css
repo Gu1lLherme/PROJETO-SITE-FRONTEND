@@ -79,6 +79,7 @@ body {
 
 
 .div-texto {
+
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -90,13 +91,15 @@ h1 {
     color: #ff2200;
     text-align: center;
     padding-top: 2%;
-    font-size: 36px;
+    font-size: 42px;
     text-align: auto;
     margin-bottom: 20px;
 
 }
 
 h3{
+    margin-top: 2%;
+    margin-bottom: 1%;
     padding-left: 50px;
 }
 
@@ -104,19 +107,19 @@ h3{
     
     width: 600px;
     padding-left: 50px;
-    font-size: 20px;
+    font-size: 24px;
     color: white;
     line-height: 1.5;
     text-align: justify;
     
 }
 .text-topic-2{
-    font-size: 18px;
+    font-size: 22px;
     text-align: center;
 }
 .text-topic-3 {
     width: 400px;
-    margin-top: 4%;
+    margin-top: 2%;
     font-size: 18px;
     text-align: left;
 }
