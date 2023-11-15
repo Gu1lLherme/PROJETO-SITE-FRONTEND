@@ -1,36 +1,41 @@
-body{
-    overflow-x: hidden; 
-    font-family: monospace"DIN Next LT Pro",Arial,sans-serif;
+body {
+    overflow-x: hidden;
+    font-family: monospace"DIN Next LT Pro", Arial, sans-serif;
     /*
     Achei no :
     https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp
     */
+    
 }
 
-.nav_menu{
-   background-color: #e7e7db;
+.nav_menu {
+    background-color: #e7e7db;
 }
 
-.nav_img{
-height: 40px !important;
+.nav_img {
+    width: 180px;
+    height: 80px !important;
+    
 }
 
-.nav_img_background{
-    clip: rect(0,auto,1005px,0);
+.nav_img_background {
+    clip: rect(0, auto, 1005px, 0);
     position: absolute;
     bottom: 0;
     z-index: -99999999;
 }
-._categoria{
+
+._categoria {
     padding-top: 15px;
     display: -webkit-inline-box;
     list-style-type: none;
-    text-decoration: none; color: #fff;
+    text-decoration: none;
+    color: #fff;
 }
 
-.cateul{
+.cateul {
     background: #9e0b0f;
-    background-image: linear-gradient(90deg,#9e0b0f,#ce1016);
+    background-image: linear-gradient(90deg, #9e0b0f, #ce1016);
     color: #fff;
     padding: 10px;
     width: auto;
@@ -40,7 +45,7 @@ height: 40px !important;
 
 }
 
-.temp{
+.temp {
     z-index: 9999;
     padding: 15px;
     position: absolute;
@@ -50,76 +55,104 @@ height: 40px !important;
     width: 59%;
 }
 
-.temp{
+.temp {
 
     font-size: 25px;
-   
+
 }
 
-.temp>b{
+.temp>b {
 
     font-size: 50px;
     text-align: justify;
     width: 50%;
-    
+
 }
 
-.gradecomojogar{
+.gradecomojogar {
 
     background: #e0e1d9;
     height: 700px;
 }
 
-footer{
-    background-color: #000;
-    color: #fff;
-    list-style-type: none;
-    display: -webkit-box;
 
 
-}
 
-
-.div-texto{
+.div-texto {
     width: 100%;
     display: flex;
     flex-direction: column;
 
 }
 
-h1 {   
-    color: #ff4125;
+
+h1 {
+    color: #ff2200;
     text-align: center;
     padding-top: 2%;
-    font-size: 29px;
+    font-size: 36px;
     text-align: auto;
-    
+    margin-bottom: 20px;
+
+}
+
+h3{
+    padding-left: 50px;
 }
 
 .text-topic {
-    margin-top: 5%;
-    font-size: 18px;
-    text-align: left;
-    max-height: auto;
-    min-height: 200px;
+    
+    width: 600px;
+    padding-left: 50px;
+    font-size: 20px;
     color: white;
+    line-height: 1.5;
+    text-align: justify;
+    
 }
-
-.text-topic-2 {
-    margin-top: 2%;
+.text-topic-2{
+    font-size: 18px;
+    text-align: center;
+}
+.text-topic-3 {
+    width: 400px;
+    margin-top: 4%;
     font-size: 18px;
     text-align: left;
-
-
 }
 
-
-.column {
-	flex-direction: column;
+footer {
     
-}
-
-.item {
+    background-color: #000;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    
+    justify-content: center;
+}
+
+li {
+    display: inline-block;
+    margin: 0 10px;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.item-list {
+    text-decoration: none;
+    background-color: white;
+    height: 100px;
+    color: black;
+    padding: 10px;
+}
+
+.div-footer {
+    margin-top: 20px; /* Ajuste a margem conforme necessário */
+}
+
+.item-div{
+    text-decoration: none;
+    color: gray;
 }
