@@ -7,6 +7,7 @@
   <!--Bootstrap-->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link href="/style/style.css" rel="stylesheet">
   <link href="/PROJETO-SITE/style/style.css" rel="stylesheet">
   <!--Favicon-->
   <link rel="icon" type="image/x-icon" href="imagens/favicone-d&d.png">
@@ -14,43 +15,33 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
     crossorigin="anonymous"></script>
+  <script>
+    function includeHTML(file, elementId) {
+      const xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function () {
+        if (this.readyState == 4 && this.status == 200) {
+          document.getElementById(elementId).innerHTML = this.responseText;
+        }
+      }
 
+      xhttp.open("GET", file, true);
+      xhttp.send();
+    }
+
+    // Inclua os arquivos HTML nos elementos desejados
+    includeHTML('PartePaginas/header.html', 'headers');
+    includeHTML('PartePaginas/rodape.html', 'footer');
+  </script>
 </head>
-<header>
-  <nav class="navbar navbar-expand-lg nav_menu">
-    <div class="container-fluid">
-      <!--Logo-->
-      <a class="navbar-brand" href="C:\Users\Guilherme\Documents\GitHub\PROJETO-SITE-FRONTEND\PROJETO-SITE\index.html">
-        <img class="nav_img" src="imagens/Logo-D&D.png" alt="logo-D&D"></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="navbar-nav">
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              JOGABILIDADE
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="what-is-d&d.html">O QUE É D&D?</a></li>
-              <li><a class="dropdown-item" href="how-to-play.html">COMO JOGAR</a></li>
-              <li><a class="dropdown-item" href="how-to-dm.html">COMO SER UM DM</a></li>
-            </ul>
-          </li>
+<header id="headers"></header>
 
-        </ul>
-
-      </div>
-
+<body>
+  <div id="introducao">
+    <div class="nav_img_background">
+      <img src="/PROJETO-SITE/Jogabilidade/imagens/dnd_learntoplay_hero1.webp" />
     </div>
-  </nav>
+    <div class="comoJogar">
 
-  <div class="nav_img_background">
-    <img src="/PROJETO-SITE/Jogabilidade/imagens/dnd_learntoplay_hero1.webp" />
-  </div>
-
-  <div class="temp div-texto ">
     <h1>O que é D&D?</h1>
     <h3>O maior RPG de todos os tempos!</h3>
     <p class="text-topic">
@@ -59,87 +50,67 @@
       sorrateiros) para criar suas próprias histórias.
     </p>
 
-  </div>
-</header>
-
-<body>
-  <center style="background: #fff;">
-    <div style="margin-top: 25%;" class="container-lg">
-      <div class="row">
-        <div class="col">
-          <ul class="_categoria">
-            <li class="cateul"><a style="
+    <center style=" margin-top:55px; background: #fff;">
+      <div class="container-lg">
+        <div class="row">
+          <div class="col">
+            <ul class="_categoria">
+              <li class="cateul"><a style="
             text-decoration: none;
-            color: #fff;" href="/PROJETO-SITE/Jogabilidade/what-is-d&d.html"> O que é D&D ?</a></li>
-            <li class="cateul"><a style="
+            color: #fff;" href="./what-is-d&d.html"> O que é D&D ?</a></li>
+              <li class="cateul"><a style="
             text-decoration: none;
             color: #fff;
-        " href="/PROJETO-SITE/Jogabilidade/how-to-play.html">Como jogar ?</a></li>
-            <li class="cateul"><a style="
+        " href="./how-to-play.html">Como jogar ?</a></li>
+              <li class="cateul"><a style="
             text-decoration: none;
             color: #fff;
-        " href="/PROJETO-SITE/Jogabilidade/how-to-dm.html">Como ser um DM ?</a></li>
-          </ul>
+        " href="./how-to-dm.html">Como ser um DM ?</a></li>
+            </ul>
 
+          </div>
         </div>
       </div>
-    </div>
-  </center>
+    </center>
 
-  <div class="gradecomojogar">
-    <div class="container text-center" style="
+    <div class="gradecomojogar">
+      <div class="container text-center" style="
     font-family: 'DIN Next LT Pro',Arial,sans-serif;
     font-weight: lighter;">
-      <div class="row" style="
+        <div class="row" style="
       font-size: 20px;
       text-align: justify;">
-        <center>
-          <h1>Boas-vindas a D&D </h1>
-          <p class="text-topic-2">Nestas páginas, você encontrará orientações e recursos para aprender o jogo e
-            continuar sua jornada.
-            Como primeiro passo, também recomendamos o Kit Introdutório de D&D, que contém tudo o
-            que você precisa para jogar Dungeons & Dragons!</p>
-        </center>
-        <div class="col-4">
-          <p class="text-topic-3"> Em Dungeons & Dragons, os jogadores formam um grupo de aventureiros que juntos
-            exploram mundos de
-            fantasia, enquanto embarcam em buscas épicas e sobem de nível de experiência.
-            O Dungeon Master (também conhecido como DM) é o juiz e o
-            narrador do jogo. Não se ganha nem perde em D&D
-            — pelo menos não da maneira convencional.
-            <br><br>
-            Em sua essência, D&D é um jogo focado em narrativas.
-            Os dados são apenas auxiliares. Todas as decisões são tomadas por você,
-            desde sua aparência, como você age e até o que acontece a seguir.
-          </p>
-        </div>
-        <div class="col-5">
-          <picture>
-            <img style="min-width: 200px; margin-left: 20%; border: 3px solid red;" src="imagens/images.png" alt="">
-          </picture>
+          <center>
+            <h1>Boas-vindas a D&D </h1>
+            <p class="text-topic-2">Nestas páginas, você encontrará orientações e recursos para aprender o jogo e
+              continuar sua jornada.
+              Como primeiro passo, também recomendamos o Kit Introdutório de D&D, que contém tudo o
+              que você precisa para jogar Dungeons & Dragons!</p>
+          </center>
+          <div class="col-4">
+            <p class="text-topic-3"> Em Dungeons & Dragons, os jogadores formam um grupo de aventureiros que juntos
+              exploram mundos de
+              fantasia, enquanto embarcam em buscas épicas e sobem de nível de experiência.
+              O Dungeon Master (também conhecido como DM) é o juiz e o
+              narrador do jogo. Não se ganha nem perde em D&D
+              — pelo menos não da maneira convencional.
+              <br><br>
+              Em sua essência, D&D é um jogo focado em narrativas.
+              Os dados são apenas auxiliares. Todas as decisões são tomadas por você,
+              desde sua aparência, como você age e até o que acontece a seguir.
+            </p>
+          </div>
+          <div class="col-5">
+            <picture>
+              <img style="max-width:400px ;min-width: 200px; margin-left: 25%; border: 3px solid red;" src="imagens/images.png" alt="">
+            </picture>
+          </div>
         </div>
       </div>
     </div>
-  </div>
 </body>
-<footer>
-  <center>
-    <ul>
-      <li><a class="item-list" href="#">Ficha de Jogardor</a></li>
-      <li><a class="item-list" href="/PROJETO-SITE/Jogabilidade/what-is-d&d.html">Livro do aventureiro</a></li>
-      <li><a class="item-list" href="/PROJETO-SITE/Jogabilidade/how-to-dm.html">Livro DM</a></li>
-    </ul>
-  </center>
 
-  <div class="div-footer">
-    <ul>
-      <li><a class="item-div" href="">Termo</a></li>
-      <li><a class="item-div" href="">Codigo de conduta</a></li>
-      <li><a class="item-div" href="">Politica e privacidade</a></li>
-      <li><a class="item-div" href="">Apoio ao cliente</a></li>
-      <li><a class="item-div" href="">Cookies</a></li>
-      <li><a class="item-div" href="">Conteudo dos Fãs</a></li>
-    </ul>
-  </div>
-</footer>
+<!--Rodape da Pagina-->
+<footer id="footer"></footer>
+
 </html>
