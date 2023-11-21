@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Página de Login Personalizada</title>
+    <style>
+        body {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #f8f9fa; 
+        }
+    </style>
+</head>
+<body class="text-center">
+
+    <main class="form-signin">
+        <form>
+            <img class="mb-4" src="img/Logo Projeto.png" alt="" width="72" height="57">
+
+            <h1 class="h3 mb-3 fw-normal text-success">Faça Login</h1>
+
+            <label for="inputEmail" class="visually-hidden">Endereço de Email</label>
+            <input type="email" id="inputEmail" class="form-control" placeholder="Seu email" required autofocus>
+
+            <label for="inputPassword" class="visually-hidden">Senha</label>
+            <input type="password" id="inputPassword" class="form-control" placeholder="Sua senha" required>
+
+            <div class="checkbox mb-3">
+                <label>
+                    <input type="checkbox" value="remember-me"> Lembrar-me
+                </label>
+            </div>
+
+            <button id="botaoEntrar" class="btn btn-success" type="submit">Entrar</button>
+            <!--Aqui eu tento fazer o botão levar para a página inicial do site
+            porém eu não sei muito como fazer isso. A ideia que eu tive foi
+        colocar o endereço aqui do index principal da branch quando o usuário apertar
+    em "entrar"-->
+        <script>
+              document.getElementById("botaoEntrar").addEventListener("click", function() {
+            window.location.href = "";
+        });
+        </script>
+        </form>
+    </main>
+
+</body>
+</html>
